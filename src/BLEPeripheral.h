@@ -22,6 +22,8 @@
 
 #if defined(NRF51) || defined(NRF52) || defined(__RFduino__)
   #include "nRF51822.h"
+#elif defined(_RN_4870_)
+  #include "rn4870.h"
 #else
   #include "nRF8001.h"
 #endif
